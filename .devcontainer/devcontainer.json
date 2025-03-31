@@ -21,6 +21,7 @@
 		"--add-host=${containerWorkspaceFolderBasename}_devcont=127.0.1.2",
 		"--privileged",
     	"--net=host",
+		// remove this line if Nvidia-container-toolkit not used 
 		"--runtime=nvidia" 
 	],
 

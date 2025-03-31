@@ -15,19 +15,15 @@ https://github.com/user-attachments/assets/f30bd779-6b80-40f3-9185-39f33d94ab91
 
 https://github.com/user-attachments/assets/1a9bba7c-f978-4cec-9b28-2888f2e2c76f
 
-## Getting started
-
-The following demo generates dynamic walking for the humanoid robot [REEM-C](http://wiki.ros.org/Robots/REEM-C) of PAL Robotics.
-It uses [Gazebo](http://gazebosim.org/) for the physics simulation and [Rviz](http://wiki.ros.org/rviz) for visualization.
-The robot can execute predefined foot-step plans or be controlled with a joystick by a user.
-
 ## Install (Docker)
+
+We release a [Docker image](https://github.com/TUM-ICS/ow_docker/pkgs/container/ow_docker) that can directly be used with [VS Code Dev Containers](https://code.visualstudio.com/docs/devcontainers/tutorial) to develop and run the project.
 
 ### Requirements
 
 - [Docker](https://docs.docker.com/engine/install/ubuntu/)
 - [Nvidia-container-toolkit](https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/latest/install-guide.html)
-- [VS Code Dev Containers](https://code.visualstudio.com/docs/devcontainers/create-dev-container)
+- [VS Code Dev Containers](https://code.visualstudio.com/docs/devcontainers/tutorial)
 
 ### 1. Pull the image (see [Repository](https://github.com/TUM-ICS/ow_docker))
 
@@ -35,14 +31,16 @@ The robot can execute predefined foot-step plans or be controlled with a joystic
 docker pull ghcr.io/tum-ics/ow_docker:melodic-reemc-devel-vscode
 ```
 
-### 2. Clone this repository and start the devcontainer
+### 2. Clone this repository and start the [devcontainer](https://code.visualstudio.com/docs/devcontainers/tutorial)
+
+If the nvidia-container-toolkit is not used, edit [devcontainer.json](.devcontainer/devcontainer.json) and remove ```--runtime=nvidia```
 
 ```bash
-git clone --recursive https://github.com/TUM-ICS/openwalker_demo.git
-cd openwalker_demo && code .
+git clone --recursive https://github.com/TUM-ICS/openwalker.git
+cd openwalker && code .
 ```
 
-### 3. Build the workspace in the devcontainer
+### 3. Build the workspace inside the devcontainer
 
 ```bash
 source /opt/pal/setup.bash
@@ -51,12 +49,14 @@ catkin build -DCATKIN_ENABLE_TESTING=0 -DCMAKE_BUILD_TYPE=Release
 
 ## Install (Manual)
 
+Alternatively, the project can also be installed on an Ubuntu 18.04 machine. 
+
 ### Requirements
 
 - Ubuntu 18.04 / [Ros Melodic](http://wiki.ros.org/melodic/Installation)
 - Compiler supporting C++11
 
-### 1. Install the following build tools.
+### 1. Install the required build tools.
 
 ```bash
 sudo apt install python3-pip python-pip python-rosdep python-rosinstall python-rosinstall-generator python-wstool build-essential python-catkin-tools
@@ -65,8 +65,8 @@ sudo apt install python3-pip python-pip python-rosdep python-rosinstall python-r
 ### 2. Clone this repository and set up the ROS environment.
 
 ```bash
-git clone --recursive https://github.com/TUM-ICS/openwalker_demo.git
-cd openwalker_demo && source /opt/ros/melodic/setup.bash
+git clone --recursive https://github.com/TUM-ICS/openwalker.git
+cd openwalker && source /opt/ros/melodic/setup.bash
 ```
 
 ### 3. Populate the workspace with the REEM-C packages.
@@ -91,21 +91,31 @@ catkin build -DCATKIN_ENABLE_TESTING=0 -DCMAKE_BUILD_TYPE=Release
 
 ## Run
 
+The following demo generates dynamic walking for the humanoid robot [REEM-C](http://wiki.ros.org/Robots/REEM-C) of PAL Robotics.
+It uses [Gazebo](http://gazebosim.org/) for the physics simulation and [Rviz](http://wiki.ros.org/rviz) for visualization.
+The robot can execute predefined foot-step plans or be controlled with a joystick by a user.
+
+For Docker users, this [readme](https://github.com/TUM-ICS/ow_docker/blob/main/README.md#using-the-standalone-image) describes how to connect terminals with the container.
+
 ### 1. Launch the simulation.
 
 ```bash
+source devel/setup.bash
 roslaunch ow_reemc gazebo.launch
 ```
 
 ### 2. Run the controller.
 
 ```bash
+source devel/setup.bash
 roslaunch ow_reemc sim.launch
 ```
 
 ### 3. Call one of the following services to start walking.
 
 ```bash
+source devel/setup.bash
+
 # Step in place.
 rosservice call /open_walker/plan_fixed_stamp
 
@@ -120,12 +130,15 @@ rosservice call /open_walker/plan_fixed_sidestep_right
 rosservice call /open_walker/plan_fixed_circle_right
 rosservice call /open_walker/plan_fixed_circle_left
 
-# Generic plan.
-rosservice call /open_walker/generate_fixed_plan \
-    "n_steps: {data: 20} \
-    length: {data: 0.2} \
-    lateral: {data: 0.0} \
-    angle: {data: 0.1}"
+# Generic plan with 20 steps of 0.2 m length and 0.1 rad angle 
+rosservice call /open_walker/plan_fixed "n_steps:
+  data: 20
+length:
+  data: 0.2 
+lateral:
+  data: 0.0
+angle:
+  data: 0.1"
 ```
 
 <img src="doc/media/plan_circle.png" width="100%" />

@@ -1,72 +1,72 @@
 [submodule "src/ow_balancer"]
 	path = src/ow_balancer
-	url = git@github.com:TUM-ICS/ow_balancer.git
+	url = https://github.com/TUM-ICS/ow_balancer.git
 [submodule "src/ow_cmd_gen"]
 	path = src/ow_cmd_gen
-	url = git@github.com:TUM-ICS/ow_cmd_gen.git
+	url = https://github.com/TUM-ICS/ow_cmd_gen.git
 [submodule "src/ow_com"]
 	path = src/ow_com
-	url = git@github.com:TUM-ICS/ow_com.git
+	url = https://github.com/TUM-ICS/ow_com.git
 [submodule "src/ow_com_tg"]
 	path = src/ow_com_tg
-	url = git@github.com:TUM-ICS/ow_com_tg.git
+	url = https://github.com/TUM-ICS/ow_com_tg.git
 [submodule "src/ow_console"]
 	path = src/ow_console
-	url = git@github.com:TUM-ICS/ow_console.git
+	url = https://github.com/TUM-ICS/ow_console.git
 [submodule "src/ow_controller"]
 	path = src/ow_controller
-	url = git@github.com:TUM-ICS/ow_controller.git
+	url = https://github.com/TUM-ICS/ow_controller.git
 [submodule "src/ow_core"]
 	path = src/ow_core
-	url = git@github.com:TUM-ICS/ow_core.git
+	url = https://github.com/TUM-ICS/ow_core.git
 [submodule "src/ow_dcm_planner"]
 	path = src/ow_dcm_planner
-	url = git@github.com:TUM-ICS/ow_dcm_planner.git
+	url = https://github.com/TUM-ICS/ow_dcm_planner.git
 [submodule "src/ow_fcm"]
 	path = src/ow_fcm
-	url = git@github.com:TUM-ICS/ow_fcm.git
+	url = https://github.com/TUM-ICS/ow_fcm.git
 [submodule "src/ow_fk"]
 	path = src/ow_fk
-	url = git@github.com:TUM-ICS/ow_fk.git
+	url = https://github.com/TUM-ICS/ow_fk.git
 [submodule "src/ow_fs_planner"]
 	path = src/ow_fs_planner
-	url = git@github.com:TUM-ICS/ow_fs_planner.git
+	url = https://github.com/TUM-ICS/ow_fs_planner.git
 [submodule "src/ow_ftg"]
 	path = src/ow_ftg
-	url = git@github.com:TUM-ICS/ow_ftg.git
+	url = https://github.com/TUM-ICS/ow_ftg.git
 [submodule "src/ow_hw_interface"]
 	path = src/ow_hw_interface
-	url = git@github.com:TUM-ICS/ow_hw_interface.git
+	url = https://github.com/TUM-ICS/ow_hw_interface.git
 [submodule "src/ow_ik"]
 	path = src/ow_ik
-	url = git@github.com:TUM-ICS/ow_ik.git
+	url = https://github.com/TUM-ICS/ow_ik.git
 [submodule "src/ow_joint_tracker"]
 	path = src/ow_joint_tracker
-	url = git@github.com:TUM-ICS/ow_joint_tracker.git
+	url = https://github.com/TUM-ICS/ow_joint_tracker.git
 [submodule "src/ow_msgs"]
 	path = src/ow_msgs
-	url = git@github.com:TUM-ICS/ow_msgs.git
+	url = https://github.com/TUM-ICS/ow_msgs.git
 [submodule "src/ow_plugin_loader"]
 	path = src/ow_plugin_loader
-	url = git@github.com:TUM-ICS/ow_plugin_loader.git
+	url = https://github.com/TUM-ICS/ow_plugin_loader.git
 [submodule "src/ow_rbdl"]
 	path = src/ow_rbdl
-	url = git@github.com:TUM-ICS/ow_rbdl.git
+	url = https://github.com/TUM-ICS/ow_rbdl.git
 [submodule "src/ow_reemc"]
 	path = src/ow_reemc
-	url = git@github.com:TUM-ICS/ow_reemc.git
+	url = https://github.com/TUM-ICS/ow_reemc.git
 [submodule "src/ow_ros_control_plugin"]
 	path = src/ow_ros_control_plugin
-	url = git@github.com:TUM-ICS/ow_ros_control_plugin.git
+	url = https://github.com/TUM-ICS/ow_ros_control_plugin.git
 [submodule "src/ow_state_machine"]
 	path = src/ow_state_machine
-	url = git@github.com:TUM-ICS/ow_state_machine.git
+	url = https://github.com/TUM-ICS/ow_state_machine.git
 [submodule "src/ow_state_publisher"]
 	path = src/ow_state_publisher
-	url = git@github.com:TUM-ICS/ow_state_publisher.git
+	url = https://github.com/TUM-ICS/ow_state_publisher.git
 [submodule "src/ow_walking_planner"]
 	path = src/ow_walking_planner
-	url = git@github.com:TUM-ICS/ow_walking_planner.git
+	url = https://github.com/TUM-ICS/ow_walking_planner.git
 [submodule "src/ow_zmp"]
 	path = src/ow_zmp
-	url = git@github.com:TUM-ICS/ow_zmp.git
+	url = https://github.com/TUM-ICS/ow_zmp.git
