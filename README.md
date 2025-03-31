@@ -25,7 +25,7 @@ We release a [Docker image](https://github.com/TUM-ICS/ow_docker/pkgs/container/
 - [Nvidia-container-toolkit](https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/latest/install-guide.html)
 - [VS Code Dev Containers](https://code.visualstudio.com/docs/devcontainers/tutorial)
 
-### 1. Pull the image (see [Repository](https://github.com/TUM-ICS/ow_docker))
+### 1. Pull the image
 
 ```bash
 docker pull ghcr.io/tum-ics/ow_docker:melodic-reemc-devel-vscode
