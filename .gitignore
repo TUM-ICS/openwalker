@@ -1,0 +1,10 @@
+.catkin_tools
+.vscode
+.catkin_workspace
+.editorconfig
+*.pyc
+bags
+build
+devel
+logs
+src/CMakeLists.txt

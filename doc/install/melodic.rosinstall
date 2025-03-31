@@ -1,0 +1,36 @@
+# REEM-C packages
+- git: {local-name: reemc_robot, uri: 'https://github.com/pal-robotics/reemc_robot.git', version: 'kinetic-devel'}
+- git: {local-name: reemc_simulation, uri: 'https://github.com/pal-robotics/reemc_simulation.git', version: 'indigo-devel'}
+- git: {local-name: reemc_moveit_config, uri: 'https://github.com/pal-robotics/reemc_moveit_config', version: 'indigo-devel'}
+- git: {local-name: reemc_tutorials, uri: 'https://github.com/pal-robotics/reemc_tutorials.git', version: 'kinetic-devel'}
+
+# PAL packages
+- git: {local-name: pal_gazebo_plugins, uri: 'https://github.com/pal-robotics/pal_gazebo_plugins.git', version: 'melodic-devel'}
+- git: {local-name: pal_hardware_gazebo, uri: 'https://github.com/pal-robotics/pal_hardware_gazebo.git', version: 'melodic-devel'}
+- git: {local-name: head_action, uri: 'https://github.com/pal-robotics/head_action', version: 'indigo-devel'}
+- git: {local-name: pal_msgs, uri: 'https://github.com/pal-robotics/pal_msgs', version: 'indigo-devel'}
+- git: {local-name: play_motion, uri: 'https://github.com/pal-robotics/play_motion', version: 'kinetic-devel'}
+- git: {local-name: pal_hardware_interfaces, uri: 'https://github.com/pal-robotics/pal_hardware_interfaces.git', version: 'indigo-devel'}
+- git: {local-name: hey5_description, uri: 'https://github.com/pal-robotics/hey5_description.git', version: 'master'}
+- git: {local-name: tf_lookup, uri: 'https://github.com/pal-robotics/tf_lookup.git', version: 'master'}
+- git: {local-name: backward_ros, uri: 'https://github.com/pal-robotics/backward_ros.git', version: 'kinetic-devel'}
+- git: {local-name: dynamic_introspection, uri: 'https://github.com/pal-robotics/dynamic_introspection.git', version: 'kinetic-devel'}
+- git: {local-name: ros_control_monitor, uri: 'https://github.com/pal-robotics/ros_control_monitor.git', version: 'kinetic-devel'}
+- git: {local-name: ddynamic_reconfigure, uri: 'https://github.com/pal-robotics/ddynamic_reconfigure.git', version: 'kinetic-devel'}
+- git: {local-name: pal_camera_client, uri: 'https://github.com/pal-robotics/pal_camera_client.git', version: 'indigo-devel'}
+- git: {local-name: pal_transmissions, uri: 'https://github.com/pal-robotics/pal_transmissions.git', version: 'kinetic-devel'}
+- git: {local-name: realsense_gazebo_plugin, uri: 'https://github.com/pal-robotics/realsense_gazebo_plugin', version: 'melodic-devel'}
+
+# PAL forks
+- git: {local-name: gazebo_ros_pkgs, uri: 'https://github.com/pal-robotics-forks/gazebo_ros_pkgs.git', version: 'melodic-devel'}
+- git: {local-name: ros_control, uri: 'https://github.com/pal-robotics-forks/ros_control.git', version: 'kinetic-devel'}
+- git: {local-name: ros_controllers, uri: 'https://github.com/pal-robotics-forks/ros_controllers.git', version: 'kinetic-devel'}
+
+# Others
+- git: {local-name: teleop_tools, uri: 'https://github.com/ros-teleop/teleop_tools', version: 'kinetic-devel'}
+- git: {local-name: twist_mux, uri: 'https://github.com/ros-teleop/twist_mux', version: 'melodic-devel'}
+- git: {local-name: twist_mux_msgs, uri: 'https://github.com/ros-teleop/twist_mux_msgs', version: 'melodic-devel'}
+- git: {local-name: humanoid_msgs, uri: 'https://github.com/ahornung/humanoid_msgs.git', version: 'master'}
+- git: {local-name: pal_statistics, uri: 'https://github.com/pal-robotics/pal_statistics', version: 'kinetic-devel'}
+- git: {local-name: axcli, uri: 'https://github.com/po1/axcli.git', version: 'master'}
+
