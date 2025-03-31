@@ -11,9 +11,9 @@ The **OpenWalker Project** aims to fulfill the need for a standard walking contr
 
 A description of all implemented algorithms and modules is available in the [online documentation](https://ics-robotics.github.io/ow_docs/doxy/html/index.html).
 
-https://github.com/user-attachments/assets/f30bd779-6b80-40f3-9185-39f33d94ab91
+https://github.com/user-attachments/assets/06298efd-9874-4d7f-9132-65cdcc7e03e7
 
-https://github.com/user-attachments/assets/1a9bba7c-f978-4cec-9b28-2888f2e2c76f
+https://github.com/user-attachments/assets/90bb2a4c-2b83-4cfc-b2d0-f711a1de4dec
 
 ## Install (Docker)
 
