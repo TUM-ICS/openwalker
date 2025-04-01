@@ -1,10 +1,10 @@
 
-# [OpenWalker](https://github.com/TUM-ICS/openwalker_demo)
+# [OpenWalker](https://github.com/TUM-ICS/openwalker)
 
 <img src="doc/media/demo_circle.png" width="400" align="right" />
 
 [![Documentation](https://img.shields.io/badge/doxygen-online-brightgreen?logo=read-the-docs&style=flat)](https://ics-robotics.github.io/ow_docs/doxy/html/index.html)
-[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://github.com/TUM-ICS/openwalker_demo/blob/main/LICENSE)
+[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://github.com/TUM-ICS/openwalker/blob/main/LICENSE)
 [![Docker](https://img.shields.io/badge/Docker%20image-ready-blue)](https://github.com/TUM-ICS/ow_docker/pkgs/container/ow_docker)
 
 The **OpenWalker Project** aims to fulfill the need for a standard walking controller architecture providing the minimal components required to generate stable walking on biped robots with planar feet. The project is based on [ros_control](http://wiki.ros.org/ros_control) and provides modules and templates for fast prototyping of balancing/walking controller components. 
