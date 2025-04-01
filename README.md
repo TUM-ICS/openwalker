@@ -96,7 +96,7 @@ The following demo generates dynamic walking for the humanoid robot [REEM-C](htt
 It uses [Gazebo](http://gazebosim.org/) for the physics simulation and [Rviz](http://wiki.ros.org/rviz) for visualization.
 The robot can execute predefined foot-step plans or be controlled with a joystick by a user.
 
-For Docker users, this [readme](https://github.com/TUM-ICS/ow_docker/blob/main/README.md#access-vscode-dev-container-outside-vscode) describes how to connect terminals with the container.
+For Docker users, this [readme](https://github.com/TUM-ICS/ow_docker?tab=readme-ov-file#access-vscode-dev-container-outside-vscode) describes how to connect terminals with the container.
 
 ### 1. Launch the simulation.
 
