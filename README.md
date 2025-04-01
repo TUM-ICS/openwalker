@@ -56,17 +56,18 @@ Alternatively, the project can also be installed on an Ubuntu 18.04 machine.
 - Ubuntu 18.04 / [Ros Melodic](http://wiki.ros.org/melodic/Installation)
 - Compiler supporting C++11
 
-### 1. Install the required build tools.
 
-```bash
-sudo apt install python3-pip python-pip python-rosdep python-rosinstall python-rosinstall-generator python-wstool build-essential python-catkin-tools
-```
-
-### 2. Clone this repository and set up the ROS environment.
+### 1. Clone this repository and set up the ROS environment.
 
 ```bash
 git clone --recursive https://github.com/TUM-ICS/openwalker.git
 cd openwalker && source /opt/ros/melodic/setup.bash
+```
+
+### 2. Install the required build tools.
+
+```bash
+./doc/install/install.sh
 ```
 
 ### 3. Populate the workspace with the REEM-C packages.
@@ -80,7 +81,7 @@ rosinstall src/reemc /opt/ros/melodic doc/install/melodic.rosinstall
 ```bash
 sudo rosdep init
 rosdep update
-rosdep install --from-paths src --ignore-src --rosdistro melodic --skip-keys="opencv2 pal_laser_filters speed_limit_node sensor_to_cloud hokuyo_node libdw-dev gmock walking_utils rqt_current_limit_controller simple_grasping_action reemc_init_offset_controller walking_controller"
+rosdep install --from-paths src --ignore-src --rosdistro melodic -y --skip-keys="opencv2 pal_laser_filters speed_limit_node sensor_to_cloud hokuyo_node libdw-dev gmock walking_utils rqt_current_limit_controller simple_grasping_action reemc_init_offset_controller walking_controller"
 ```
 
 ### 5. Build the workspace.
@@ -95,7 +96,7 @@ The following demo generates dynamic walking for the humanoid robot [REEM-C](htt
 It uses [Gazebo](http://gazebosim.org/) for the physics simulation and [Rviz](http://wiki.ros.org/rviz) for visualization.
 The robot can execute predefined foot-step plans or be controlled with a joystick by a user.
 
-For Docker users, this [readme](https://github.com/TUM-ICS/ow_docker/blob/main/README.md#using-the-standalone-image) describes how to connect terminals with the container.
+For Docker users, this [readme](https://github.com/TUM-ICS/ow_docker/blob/main/README.md#access-vscode-dev-container-outside-vscode) describes how to connect terminals with the container.
 
 ### 1. Launch the simulation.
 
